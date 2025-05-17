@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="https://www.w3.org/1999/xhtml">
+  <!-- your home/only page -->
+  <url>
+    <loc>https://findbono.com/</loc>
+    <lastmod>2025-05-17</lastmod>          <!-- update this daily -->
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

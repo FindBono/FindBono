@@ -1,0 +1,26 @@
+{
+  "name":             "Find Bono – Daily Puzzle",
+  "short_name":       "FindBono",
+  "description":      "Find Bono the elephant hidden in today’s image—new puzzle every day!",
+  "start_url":        "/?utm_source=homescreen",
+  "display":          "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color":      "#333333",
+  "icons": [
+    {
+      "src":   "/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type":  "image/png"
+    },
+    {
+      "src":   "/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type":  "image/png"
+    },
+    {
+      "src":   "/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type":  "image/png"
+    }
+  ]
+}
