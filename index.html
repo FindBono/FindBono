@@ -1276,7 +1276,9 @@ function showCopyToast2() {
 // simple clipboard copy
 function copyLinkToClipboard(link) {
   const tmp = document.createElement('textarea');
+  //const message = `I got the ${medal} medals ${netMs} seconds! Can you beat me? #FindBono`;
   tmp.value = link;
+  //tmp.value = `${message} ${link}`;
   document.body.appendChild(tmp);
   tmp.select();
   document.execCommand('copy');

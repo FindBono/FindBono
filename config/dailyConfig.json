@@ -1,5 +1,5 @@
 {
-    "2025-05-17": {
+    "2025-05-26": {
       "mainImage":  "images/2025-05-08.jpg",
       "clickZone":  { "top": "51%", "left": "93%", "width": "2%", "height": "2%" },
       "bonusZone1":  { "top": "59%", "left": "12%", "width": "4%", "height": "4%" },
@@ -98,7 +98,7 @@
         "images/target3.png"
       ]
     },
-          "2025-05-26": {
+          "2025-05-17": {
       "mainImage":  "images/2025-05-26.jpg",
       "clickZone":  { "top": "14%", "left": "54.5%", "width": "2.5%", "height": "4%" },
       "bonusZone1":  { "top": "10%", "left": "91%", "width": "2%", "height": "4%" },
