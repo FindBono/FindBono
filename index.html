@@ -237,7 +237,8 @@
       width: 50px;            
       height: 50px;
       border-radius: 50%;     
-      cursor: pointer; position:fixed; bottom:20px; left:348px; z-index:1100; 
+      cursor: pointer; 
+      position:fixed; bottom:20px; left:348px; z-index:1100; 
     } 
     .game-button.blurred {
       filter: blur(4px);
@@ -264,7 +265,7 @@
       left: 43%;   /* adjust as needed */
       width: 25px; /* original size */
       height: 75px;/* original size */
-      cursor: pointer;
+     /* cursor: pointer;*/
               /*background: black; */
       opacity: 0.8;
       z-index: 10;
@@ -272,7 +273,7 @@
     .bonus-zone {
       position: absolute;
       
-      cursor: pointer;
+      /*cursor: pointer;*/
       z-index: 9;
     }
     #bonus-zone-1 { top: 10%; /*background: rgb(255, 0, 0)*/; opacity: 0.8; left: 60%; width: 100px; height: 80px; }
@@ -991,7 +992,7 @@ localStorage.setItem('lastPlayedDay', todayKey);
   btn.classList.remove("blurred")
 );
 });
-
+/*
 closeBtn.addEventListener('click', () => {
   const shareData = {
     title: document.title,
@@ -1005,11 +1006,52 @@ closeBtn.addEventListener('click', () => {
       .catch(err => console.error('Share failed:', err));
   } else {
     // desktop fallback: copy link + a friendly in-page toast
-    copyLinkToClipboard(shareData.url);
+     const timeInSeconds = (lastResult.netMs / 1000).toFixed(2); // Convert ms to seconds, e.g., "12.34"
+      const medal = lastResult.medal; // e.g., "gold"
+      
+      const desktopMessage = `I got the ${medal} medal in ${timeInSeconds} seconds! Can you beat my time? #FindBono`;
+      const textToCopy = `${desktopMessage} ${shareUrl}`;
+      
+      copyLinkToClipboard2(textToCopy);
+    //copyLinkToClipboard(shareData.url);
     showCopyToast2();  
   }
 });
 
+*/
+closeBtn.addEventListener('click', () => {
+  const shareUrl = location.href; // Define URL once
+
+  // only invoke native share on (likely) mobile
+  if (navigator.share && isMobile) { // isMobile is defined in your full script
+    // Mobile share data (keeps original generic text, or you can customize it too)
+    const mobileShareData = {
+      title: document.title,
+      text: 'I just played the Daily Hidden Object Game! Can you beat my time?',
+      url: shareUrl
+    };
+    navigator.share(mobileShareData)
+      .catch(err => console.error('Share failed:', err));
+  } else {
+    // Desktop fallback:
+    // Attempt to use lastResult to construct the custom message
+    if (typeof lastResult !== 'undefined' && lastResult && typeof lastResult.netMs === 'number' && lastResult.medal) {
+      const timeInSeconds = (lastResult.netMs / 1000).toFixed(2); // Convert ms to seconds, e.g., "12.34"
+      const medal = lastResult.medal; // e.g., "gold"
+      
+      const desktopMessage = `I got the ${medal} medal in ${timeInSeconds} seconds! Can you beat my time? `;
+      const textToCopy = `${desktopMessage} ${shareUrl}`;
+      
+      copyLinkToClipboard(textToCopy);
+    } else {
+      // Fallback if lastResult is not available or malformed: copy only the URL
+      // This might happen if the modal is shown in an unexpected state.
+      console.warn('Share: lastResult not available or incomplete. Copying URL only for desktop.');
+      copyLinkToClipboard(shareUrl);
+    }
+    showCopyToast2(); // Your existing function to show feedback
+  }
+});
 
 
     // Close timer modal by clicking outside content
@@ -1030,9 +1072,9 @@ closeBtn.addEventListener('click', () => {
 
   // 2) pick medal
   let medal;
-  if      (netMs <    0) medal = 'amethyst';
-  else if (netMs <= 5000) medal = 'gold';
-  else if (netMs <=10000) medal = 'silver';
+  if      (netMs < 4000) medal = 'amethyst';
+  else if (netMs <=20000) medal = 'gold';
+  else if (netMs <=40000) medal = 'silver';
   else                    medal = 'bronze';
 
   // 3) update medal counts
@@ -1284,6 +1326,15 @@ function copyLinkToClipboard(link) {
   document.execCommand('copy');
   document.body.removeChild(tmp);
 }
+function copyLinkToClipboard2(textToCopy) { // Parameter changed from 'link' to 'textToCopy'
+  const tmp = document.createElement('textarea');
+  tmp.value = textToCopy; // Assign the full text (message + URL)
+  document.body.appendChild(tmp);
+  tmp.select();
+  document.execCommand('copy');
+  document.body.removeChild(tmp);
+}
+
   </script>
 </body>
 </html>
