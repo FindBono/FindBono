@@ -152,5 +152,16 @@
         "images/cat.jpg",
         "images/target3.png"
       ]
+    },
+                 "2025-06-03": {
+      "mainImage":  "images/colors.jpg",
+      "clickZone":  { "top": "10%", "left": "70%", "width": "3%", "height": "3%" },
+      "bonusZone1":  { "top": "56%", "left": "3%", "width": "4%", "height": "5%" },
+      "bonusZone2":  { "top": "78%", "left": "67%", "width": "1.7%", "height": "2.5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/carpet.png",
+        "images/target3.png"
+      ]
     }
 }
