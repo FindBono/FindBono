@@ -163,5 +163,49 @@
         "images/carpet.png",
         "images/target3.png"
       ]
+    },
+                 "2025-06-07": {
+      "mainImage":  "images/2025-06-07.jpg",
+      "clickZone":  { "top": "18%", "left": "22%", "width": "3%", "height": "3%" },
+      "bonusZone1":  { "top": "45%", "left": "85%", "width": "4%", "height": "5%" },
+      "bonusZone2":  { "top": "57%", "left": "29%", "width": "1.7%", "height": "2.5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/genie.png",
+        "images/target3.png"
+      ]
+    },
+                    "2025-06-08": {
+      "mainImage":  "images/2025-06-08.jpg",
+      "clickZone":  { "top": "50%", "left": "7%", "width": "3%", "height": "3%" },
+      "bonusZone1":  { "top": "28%", "left": "40%", "width": "4%", "height": "5%" },
+      "bonusZone2":  { "top": "1%", "left": "81%", "width": "4%", "height": "2.5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/football.png",
+        "images/target3.png"
+      ]
+    },
+                 "2025-06-09": {
+      "mainImage":  "images/2025-06-09.jpg",
+      "clickZone":  { "top": "49%", "left": "87%", "width": "3%", "height": "4%" },
+      "bonusZone1":  { "top": "20%", "left": "89%", "width": "4%", "height": "5%" },
+      "bonusZone2":  { "top": "54.5%", "left": "14.5%", "width": "1.7%", "height": "2.5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/viking.png",
+        "images/target3.png"
+      ]
+    },
+                 "2025-06-10": {
+      "mainImage":  "images/2025-06-10.jpg",
+      "clickZone":  { "top": "9.5%", "left": "71%", "width": "3%", "height": "3%" },
+      "bonusZone1":  { "top": "7%", "left": "5.3%", "width": "4%", "height": "5%" },
+      "bonusZone2":  { "top": "52%", "left": "90%", "width": "1.7%", "height": "2.5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/hammer.png",
+        "images/target3.png"
+      ]
     }
 }
