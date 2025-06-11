@@ -207,5 +207,39 @@
         "images/hammer.png",
         "images/target3.png"
       ]
+    },
+      "2025-06-11": {
+      "mainImage":  "images/2025-06-11.jpg",
+      "clickZone":  { "top": "56%", "left": "25%", "width": "3%", "height": "3%" },
+      "bonusZone1":  { "top": "37%", "left": "90%", "width": "4%", "height": "5%" },
+      "bonusZone2":  { "top": "76.5%", "left": "91%", "width": "1.7%", "height": "2.5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/orb.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-06-12": {
+      "mainImage":  "images/2025-06-12.jpg",
+      "clickZone":  { "top": "67%", "left": "40%", "width": "3%", "height": "3%" },
+      "bonusZone1":  { "top": "33%", "left": "86%", "width": "4%", "height": "5%" },
+      "bonusZone2":  { "top": "23%", "left": "12%", "width": "1.7%", "height": "2.5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/ufo.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-06-13": {
+      "mainImage":  "images/2025-06-13.jpg",
+      "clickZone":  { "top": "61%", "left": "63%", "width": "3%", "height": "4%" },
+      "bonusZone1":  { "top": "21%", "left": "79%", "width": "4%", "height": "5%" },
+      "bonusZone2":  { "top": "62%", "left": "29.5%", "width": "1.7%", "height": "2.5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/robot.png",
+        "images/target3.png"
+      ]
     }
+
 }
