@@ -258,6 +258,15 @@
       height: auto;
       object-fit: contain;
     }
+    #top-right-text {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1200;
+}
     /* Click zone */
     #click-zone {
       position: absolute;
@@ -266,7 +275,7 @@
       width: 25px; /* original size */
       height: 75px;/* original size */
      /* cursor: pointer;*/
-             /* background: black; */
+              /*background: black; */
       opacity: 0.8;
       z-index: 10;
     }
@@ -581,6 +590,7 @@ width: 95vw;
 
 
   <div id="found-panel"></div>
+  <div id="top-right-text">Sorry for not updating the<br>game for the last few days!<br>Creating new images takes<br>time and I had a lot going<br>on recently. All streaks should<br>remain as long as you play<br>within the next few days.<br>I'm trying to grow the<br> playerbase right now so please<br>feel free to share the game if<br>you enjoy it.</div>
 
 
   <!-- Timer Modal -->
@@ -1096,28 +1106,66 @@ closeBtn.addEventListener('click', () => {
   // 5) compute streaks
   const dateSet = new Set(scores.map(e => e.date));
   const daysPlayed = dateSet.size;
-
+  const downtimeDays = new Set(['2025-06-28','2025-06-29','2025-06-30','2025-07-01', '2025-07-02', '2025-07-03', '2025-07-04','2025-07-05','2025-07-06']);
   let streak = 0;
   for (let i = 0; ; i++) {
-    const d = new Date(); d.setDate(d.getDate() - i);
-    if (dateSet.has(d.toISOString().slice(0,10))) streak++;
-    else break;
+  const d = new Date();
+  d.setDate(d.getDate() - i);
+  const dStr = d.toISOString().slice(0, 10);
+
+  if (dateSet.has(dStr)) {
+    // If the day was played, increase the streak
+    streak++;
+  } else if (downtimeDays.has(dStr)) {
+    // If it's a downtime day, do nothing and let the loop continue
+    continue;
+  } else {
+    // If it's a normal day that wasn't played, the streak is broken
+    break;
   }
+}
 
   let longestStreak = 0;
-  for (let dStr of dateSet) {
-    const prev = new Date(dStr); prev.setDate(prev.getDate()-1);
-    const prevKey = prev.toISOString().slice(0,10);
-    if (!dateSet.has(prevKey)) {
-      let run=1, nxt=new Date(dStr);
-      while (true) {
-        nxt.setDate(nxt.getDate()+1);
-        if (dateSet.has(nxt.toISOString().slice(0,10))) run++;
-        else break;
-      }
-      longestStreak = Math.max(longestStreak, run);
+  let currentRun = 0;
+// Sort dates to calculate streaks chronologically
+const sortedDates = Array.from(dateSet).sort();
+
+if (sortedDates.length > 0) {
+    currentRun = 1;
+    longestStreak = 1;
+
+    for (let i = 1; i < sortedDates.length; i++) {
+        const currentDate = new Date(sortedDates[i]);
+        const previousDate = new Date(sortedDates[i-1]);
+
+        // Calculate the number of days between the two played dates
+        const dayDifference = (currentDate - previousDate) / (1000 * 60 * 60 * 24);
+
+        // Count how many of those days in between were downtime
+        let downtimeInBetween = 0;
+        for (let j = 1; j < dayDifference; j++) {
+            const checkDate = new Date(previousDate);
+            checkDate.setDate(checkDate.getDate() + j);
+            if (downtimeDays.has(checkDate.toISOString().slice(0, 10))) {
+                downtimeInBetween++;
+            }
+        }
+        
+        // The "real" gap is the difference minus any downtime days
+        const effectiveGap = dayDifference - downtimeInBetween;
+
+        if (effectiveGap === 1) {
+            // If the effective gap is 1, the streak continues
+            currentRun++;
+        } else {
+            // Otherwise, the streak is broken; save the max and reset
+            longestStreak = Math.max(longestStreak, currentRun);
+            currentRun = 1;
+        }
     }
-  }
+}
+// Final check to see if the last run was the longest
+longestStreak = Math.max(longestStreak, currentRun);
 if (testMode) {
   localStorage.setItem('lastPlayTs', Date.now());
 } else {
