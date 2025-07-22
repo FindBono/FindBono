@@ -44,7 +44,9 @@
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+ 
 >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 <script>
   // your existing loadGA() from earlier:
@@ -258,7 +260,7 @@
       height: auto;
       object-fit: contain;
     }
-    #top-right-text {
+ /*   #top-right-text {
   position: fixed;
   top: 10px;
   right: 10px;
@@ -266,7 +268,7 @@
   padding: 5px 10px;
   border-radius: 5px;
   z-index: 1200;
-}
+}*/
     /* Click zone */
     #click-zone {
       position: absolute;
@@ -433,6 +435,61 @@
   outline: 3px solid var(--accent);
   outline-offset: 2px;
 }
+.top-right-wrapper {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1200;
+  text-align: right;
+}
+#top-right-text {
+  margin-bottom: 8px;
+
+
+  line-height: 1.4;
+}
+.twitter-button2 {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease;
+}
+.twitter-button2:hover {
+  background-color: #333;
+}
+
+.twitter-button2 i {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* Font Awesome */
+
+  .twitter-button {
+    background-color: #02070a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+  }
+
+  .twitter-button:hover {
+    background-color: #000000;
+  }
+
+
+
 @media (orientation: portrait) and (max-width: 1250px) {
   #score-stats {
   
@@ -527,6 +584,11 @@ width: 95vw;
       align-items: center;     /* center horizontally */
     }
 }
+@media (max-width: 1400px) {
+  .top-right-wrapper {
+    display: none;
+  }
+}
   </style>
   
  
@@ -590,9 +652,18 @@ width: 95vw;
 
 
   <div id="found-panel"></div>
-  <!--<div id="top-right-text">Sorry for not updating the<br>game for the last few days!<br>Creating new images takes<br>time and I had a lot going<br>on recently. All streaks should<br>remain as long as you play<br>within the next few days.<br>I'm trying to grow the<br> playerbase right now so please<br>feel free to share the game if<br>you enjoy it.</div>
--->
+<div class="top-right-wrapper">
+  <div id="top-right-text">
+    Do you have any recommendations<br>
+    for the game? Message me on<br>
+    Twitter @findbono. Also do<br>
+    you play on mobile or desktop?
+  </div>
 
+  <a href="https://twitter.com/findbono" target="_blank" class="twitter-button2">
+    <i class="fab fa-twitter"></i> Follow
+  </a>
+</div>
   <!-- Timer Modal -->
   <div id="timer-modal">
     <div id="modal-content">
