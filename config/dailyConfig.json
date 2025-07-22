@@ -504,5 +504,16 @@
         "images/mask.png",
         "images/target3.png"
       ]
+    },
+    "2025-07-23": {
+      "mainImage":  "images/2025-07-23.jpg",
+      "clickZone":  { "top": "11%", "left": "51%", "width": "4%", "height": "5%" },
+      "bonusZone1":  { "top": "45%", "left": "15%", "width": "7%", "height": "20%" },
+      "bonusZone2":  { "top": "70%", "left": "75%", "width": "6%", "height": "5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/harpoon.png",
+        "images/target3.png"
+      ]
     }
 }
