@@ -515,5 +515,159 @@
         "images/harpoon.png",
         "images/target3.png"
       ]
+    },
+    "2025-07-24": {
+      "mainImage":  "images/2025-07-24.jpg",
+      "clickZone":  { "top": "57%", "left": "11%", "width": "4%", "height": "5%" },
+      "bonusZone1":  { "top": "70%", "left": "80%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "1%", "left": "74%", "width": "6%", "height": "3%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/ring.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-07-25": {
+      "mainImage":  "images/2025-07-25.jpg",
+      "clickZone":  { "top": "13%", "left": "16%", "width": "4%", "height": "5%" },
+      "bonusZone1":  { "top": "52%", "left": "12%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "24%", "left": "65%", "width": "4%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/lily.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-07-26": {
+      "mainImage":  "images/2025-07-26.jpg",
+      "clickZone":  { "top": "42%", "left": "10%", "width": "6%", "height": "6%" },
+      "bonusZone1":  { "top": "30%", "left": "88%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "93%", "left": "29%", "width": "6%", "height": "3%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/fan.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-07-27": {
+      "mainImage":  "images/2025-07-27.jpg",
+      "clickZone":  { "top": "25%", "left": "86%", "width": "4%", "height": "5%" },
+      "bonusZone1":  { "top": "66%", "left": "90%", "width": "7%", "height": "8%" },
+      "bonusZone2":  { "top": "50%", "left": "25%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/news.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-07-28": {
+      "mainImage":  "images/2025-07-28.jpg",
+      "clickZone":  { "top": "38%", "left": "93%", "width": "4%", "height": "5%" },
+      "bonusZone1":  { "top": "25%", "left": "4%", "width": "15%", "height": "7%" },
+      "bonusZone2":  { "top": "96%", "left": "52%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/bat.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-07-29": {
+      "mainImage":  "images/2025-07-29.jpg",
+      "clickZone":  { "top": "61%", "left": "9%", "width": "4%", "height": "5%" },
+      "bonusZone1":  { "top": "16%", "left": "82%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "36%", "left": "75%", "width": "6%", "height": "3%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/suitcase.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-07-30": {
+      "mainImage":  "images/2025-07-30.jpg",
+      "clickZone":  { "top": "31%", "left": "87%", "width": "7%", "height": "7%" },
+      "bonusZone1":  { "top": "83%", "left": "16%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "74%", "left": "91%", "width": "6%", "height": "3%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/horse.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-07-31": {
+      "mainImage":  "images/2025-07-31.jpg",
+      "clickZone":  { "top": "30%", "left": "88%", "width": "6%", "height": "5%" },
+      "bonusZone1":  { "top": "7%", "left": "13%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "36%", "left": "25%", "width": "6%", "height": "3%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/hat.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-08-01": {
+      "mainImage":  "images/2025-08-01.jpg",
+      "clickZone":  { "top": "24%", "left": "6%", "width": "6%", "height": "5%" },
+      "bonusZone1":  { "top": "50%", "left": "43%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "55%", "left": "68%", "width": "6%", "height": "3%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/coin.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-08-02": {
+      "mainImage":  "images/2025-08-02.jpg",
+      "clickZone":  { "top": "8%", "left": "40%", "width": "6%", "height": "5%" },
+      "bonusZone1":  { "top": "19%", "left": "31%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "89%", "left": "78%", "width": "6%", "height": "5%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/idol.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-08-03": {
+      "mainImage":  "images/2025-08-03.jpg",
+      "clickZone":  { "top": "15%", "left": "70%", "width": "6%", "height": "5%" },
+      "bonusZone1":  { "top": "20%", "left": "27%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "47%", "left": "25%", "width": "6%", "height": "6%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/handker.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-08-04": {
+      "mainImage":  "images/2025-08-04.jpg",
+      "clickZone":  { "top": "17%", "left": "30%", "width": "6%", "height": "5%" },
+      "bonusZone1":  { "top": "70%", "left": "93%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "81%", "left": "50%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/computer.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-08-05": {
+      "mainImage":  "images/2025-08-05.jpg",
+      "clickZone":  { "top": "45%", "left": "25%", "width": "6%", "height": "5%" },
+      "bonusZone1":  { "top": "52%", "left": "77%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "14%", "left": "50%", "width": "6%", "height": "3%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/apple.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-08-06": {
+      "mainImage":  "images/2025-08-06.jpg",
+      "clickZone":  { "top": "60%", "left": "10%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "8%", "left": "55%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "47%", "left": "65%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/cocktail.png",
+        "images/target3.png"
+      ]
     }
 }
