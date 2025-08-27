@@ -842,7 +842,7 @@
       "bonusZone2":  { "top": "65%", "left": "22%", "width": "6%", "height": "4%" },
       "foundPanel": [
         "images/target1.png",
-        "images/stake.png",
+        "images/STAKE.png",
         "images/target3.png"
       ]
     },
