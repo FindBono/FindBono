@@ -955,5 +955,49 @@
         "images/music.png",
         "images/target3.png"
       ]
+    },
+    "2025-09-08": {
+      "mainImage":  "images/2025-09-08.jpg",
+      "clickZone":  { "top": "5%", "left": "5%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "91%", "left": "42%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "90%", "left": "91%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/ringe.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-09-09": {
+      "mainImage":  "images/2025-09-09.jpg",
+      "clickZone":  { "top": "75%", "left": "83%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "46%", "left": "88%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "62%", "left": "25%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/boombox.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-09-10": {
+      "mainImage":  "images/2025-09-10.jpg",
+      "clickZone":  { "top": "30%", "left": "25%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "46%", "left": "66%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "33.5%", "left": "87%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/tnt.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-09-11": {
+      "mainImage":  "images/2025-09-11.jpg",
+      "clickZone":  { "top": "60%", "left": "75%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "71%", "left": "19%", "width": "7%", "height": "7%" },
+      "bonusZone2":  { "top": "20%", "left": "31%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/ticket.png",
+        "images/target3.png"
+      ]
     }
 }
