@@ -385,7 +385,7 @@
       ]
     },
     "2025-09-15": {
-      "mainImage":  "images/2025-08-14.jpg",
+      "mainImage":  "images/2025-07-08.jpg",
       "clickZone":  { "top": "10%", "left": "74%", "width": "4%", "height": "5%" },
       "bonusZone1":  { "top": "65%", "left": "70%", "width": "7%", "height": "7%" },
       "bonusZone2":  { "top": "84%", "left": "92%", "width": "1.7%", "height": "3%" },
