@@ -1043,5 +1043,49 @@
         "images/bo.png",
         "images/target3.png"
       ]
+    },
+    "2025-10-08": {
+      "mainImage":  "images/2025-10-08.jpg",
+      "clickZone":  { "top": "20%", "left": "17%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "88%", "left": "16%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "30%", "left": "86%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/matcha.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-10-09": {
+      "mainImage":  "images/2025-10-09.jpg",
+      "clickZone":  { "top": "37%", "left": "85%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "80%", "left": "40%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "45%", "left": "5%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/bell.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-10-10": {
+      "mainImage":  "images/2025-10-10.jpg",
+      "clickZone":  { "top": "48%", "left": "37%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "30%", "left": "80%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "14%", "left": "23%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/cola.png",
+        "images/target3.png"
+      ]
+    },
+    "2025-10-11": {
+      "mainImage":  "images/2025-10-11.jpg",
+      "clickZone":  { "top": "56%", "left": "65%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "90%", "left": "30%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "4%", "left": "50%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/egg.png",
+        "images/target3.png"
+      ]
     }
 }
