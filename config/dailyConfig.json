@@ -373,7 +373,7 @@
         "images/target3.png"
       ]
     },
-    "2025-07-07": {
+    "2025-10-21": {
       "mainImage":  "images/2025-07-07.jpg",
       "clickZone":  { "top": "35%", "left": "67%", "width": "4%", "height": "5%" },
       "bonusZone1":  { "top": "14%", "left": "14%", "width": "7%", "height": "7%" },
