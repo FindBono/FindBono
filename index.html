@@ -476,7 +476,27 @@
   right: 20px;
   font-size: 10px;
 }
+/*resettimer*/
+#daily-timer-container {
+    position: fixed;
+    bottom: 150px;
+    left: 20px;
+    /*background-color: rgba(0, 0, 0, 0.8);  Dark background */
+    color: var(--accent);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 2000; /* Ensure it sits on top of other elements */
+    display: none; /* Hidden by default, shown via JS when game is done */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
 
+#daily-countdown {
+    color: var(--accent); /* Gold color for the numbers */
+    margin-left: 5px;
+}
 /* Font Awesome */
 
   .twitter-button {
@@ -595,6 +615,11 @@ width: 95vw;
     display: none;
   }
 }
+@media (max-width: 768px) {
+    #daily-timer-container {
+        display: none !important;
+    }
+}
   </style>
   
  
@@ -710,7 +735,9 @@ fill="#333" stroke="none">
 
     </div>
   </div>
-
+<div id="daily-timer-container">
+    Come back in: <span id="daily-countdown">--:--:--</span>
+</div>
   <script>
     let foundIndices = JSON.parse(localStorage.getItem('foundIndices')||'[]');
     let foundPanelImgs = []; 
@@ -767,6 +794,7 @@ const lastDay  = localStorage.getItem('lastPlayedDay');
       timerModal.style.display = 'flex';
       statsBtn.style.display  = 'block';
       introModal.style.display = 'none';
+      startDailyCountdown();
     }
   }
  });
@@ -1059,6 +1087,7 @@ localStorage.setItem('lastPlayedDay', todayKey);
 
       timerModal.style.display = 'flex';
   statsBtn.style.display = 'block';
+  startDailyCountdown();
   localStorage.setItem('lastResult', JSON.stringify(lastResult));
  if (foundPanelImgs.length > 0) {
         foundPanelImgs[0].classList.add('found');
@@ -1456,7 +1485,45 @@ function copyLinkToClipboard2(textToCopy) { // Parameter changed from 'link' to 
   document.execCommand('copy');
   document.body.removeChild(tmp);
 }
+function startDailyCountdown() {
+    const container = document.getElementById('daily-timer-container');
+    const display = document.getElementById('daily-countdown');
+    
+    // Reveal the timer container
+    if (container) container.style.display = 'block';
 
+    function updateTimer() {
+        const now = new Date();
+        
+        // Create a date object for the next reset
+        const nextReset = new Date();
+        
+        // setUTCHours(24,0,0,0) sets the time to 00:00:00 UTC tomorrow
+        // This matches your todayKey = toISOString() logic
+        nextReset.setUTCHours(24, 0, 0, 0); 
+        
+        const diff = nextReset - now;
+
+        // If timer hits zero, reload the page
+        if (diff <= 0) {
+            location.reload();
+            return;
+        }
+
+        // Calculate hours, minutes, seconds from the milliseconds difference
+        const h = Math.floor(diff / (1000 * 60 * 60));
+        const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+        // Format with leading zeros
+        display.textContent = 
+            `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    }
+
+    // Run immediately and then every second
+    updateTimer();
+    setInterval(updateTimer, 1000);
+}
   </script>
 </body>
 </html>
