@@ -1461,5 +1461,16 @@
         "images/pole.png",
         "images/target3.png"
       ]
+    },
+    "2025-12-09": {
+      "mainImage":  "images/2025-12-09.jpg",
+      "clickZone":  { "top": "74%", "left": "15%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "24%", "left": "85%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "48%", "left": "30%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/blackcat.png",
+        "images/target3.png"
+      ]
     }
 }
