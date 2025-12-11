@@ -780,7 +780,7 @@
         "images/target3.png"
       ]
     },
-    "2025-08-22": {
+    "2025-12-12": {
       "mainImage":  "images/2025-08-22.jpg",
       "clickZone":  { "top": "90%", "left": "65%", "width": "6%", "height": "9%" },
       "bonusZone1":  { "top": "16%", "left": "68%", "width": "7%", "height": "7%" },
@@ -802,7 +802,7 @@
         "images/target3.png"
       ]
     },
-    "2025-08-24": {
+    "2025-12-13": {
       "mainImage":  "images/2025-08-24.jpg",
       "clickZone":  { "top": "52%", "left": "62%", "width": "6%", "height": "9%" },
       "bonusZone1":  { "top": "56%", "left": "18%", "width": "7%", "height": "7%" },
