@@ -25,7 +25,7 @@
       ]
     },
     "2026-01-02": {
-      "mainImage":  "aimages/2025-05-15.jpg",
+      "mainImage":  "images/2025-05-15.jpg",
       "clickZone":  { "top": "49%", "left": "19%", "width": "2%", "height": "3%" },
       "bonusZone1":  { "top": "94%", "left": "56%", "width": "4%", "height": "4.5%" },
       "bonusZone2":  { "top": "39.7%", "left": "94%", "width": "1%", "height": "1%" },
