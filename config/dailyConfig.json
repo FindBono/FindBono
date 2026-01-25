@@ -1596,5 +1596,16 @@
         "images/horn.jpg",
         "images/target3.png"
       ]
+    },
+    "2026-01-26": {
+      "mainImage":  "images/2026-01-26.jpg",
+      "clickZone":  { "top": "21%", "left": "32%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "80%", "left": "68%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "56%", "left": "5%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/honey.jpg",
+        "images/target3.png"
+      ]
     }
 }
