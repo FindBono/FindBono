@@ -1607,5 +1607,16 @@
         "images/honey.jpg",
         "images/target3.png"
       ]
+    },
+    "2026-01-28": {
+      "mainImage":  "images/2026-01-28.jpg",
+      "clickZone":  { "top": "30%", "left": "82%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "60%", "left": "5%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "88%", "left": "78%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/gargoyle.jpg",
+        "images/target3.png"
+      ]
     }
 }
