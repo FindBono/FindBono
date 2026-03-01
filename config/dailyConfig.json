@@ -1684,5 +1684,16 @@
         "images/pass.jpg",
         "images/target3.png"
       ]
+    },
+    "2026-03-01": {
+      "mainImage":  "images/2026-03-01.jpg",
+      "clickZone":  { "top": "15%", "left": "65%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "50%", "left": "67%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "30%", "left": "80%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/item.jpg",
+        "images/target3.png"
+      ]
     }
 }
