@@ -1816,5 +1816,16 @@
         "images/pistil.jpg",
         "images/target3.png"
       ]
+    },
+    "2026-03-17": {
+      "mainImage":  "images/2026-03-17.jpg",
+      "clickZone":  { "top": "20%", "left": "82%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "74%", "left": "78%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "69%", "left": "15%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/helm.jpg",
+        "images/target3.png"
+      ]
     }
 }
