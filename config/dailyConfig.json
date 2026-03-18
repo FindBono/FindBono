@@ -1827,5 +1827,16 @@
         "images/helm.jpg",
         "images/target3.png"
       ]
+    },
+    "2026-03-18": {
+      "mainImage":  "images/2026-03-18.jpg",
+      "clickZone":  { "top": "62%", "left": "12%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "79%", "left": "84%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "60%", "left": "84%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/crate.jpg",
+        "images/target3.png"
+      ]
     }
 }
