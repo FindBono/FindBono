@@ -1838,5 +1838,16 @@
         "images/crate.jpg",
         "images/target3.png"
       ]
+    },
+    "2026-03-24": {
+      "mainImage":  "images/2026-03-24.jpg",
+      "clickZone":  { "top": "25%", "left": "90%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "15%", "left": "82%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "75%", "left": "84%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/pilgrim.jpg",
+        "images/target3.png"
+      ]
     }
 }
