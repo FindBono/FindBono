@@ -1849,5 +1849,16 @@
         "images/pilgrim.jpg",
         "images/target3.png"
       ]
+    },
+    "2026-03-25": {
+      "mainImage":  "images/2026-03-25.jpg",
+      "clickZone":  { "top": "15%", "left": "10%", "width": "6%", "height": "9%" },
+      "bonusZone1":  { "top": "8%", "left": "47%", "width": "7%", "height": "12%" },
+      "bonusZone2":  { "top": "59%", "left": "91%", "width": "6%", "height": "4%" },
+      "foundPanel": [
+        "images/target1.png",
+        "images/vr.jpg",
+        "images/target3.png"
+      ]
     }
 }
