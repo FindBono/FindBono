@@ -1520,7 +1520,7 @@
         "images/target3.png"
       ]
     },
-    "2026-01-14": {
+    "2026-04-26": {
       "mainImage":  "images/2026-01-14.jpg",
       "clickZone":  { "top": "17%", "left": "13%", "width": "6%", "height": "9%" },
       "bonusZone1":  { "top": "33%", "left": "88%", "width": "7%", "height": "12%" },
