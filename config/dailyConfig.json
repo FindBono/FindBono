@@ -2,7 +2,7 @@
 
 
 {
-    "2025-07-04": {
+    "2025-07-4": {
       "mainImage":  "images/2025-05-08.jpg",
       "clickZone":  { "top": "51%", "left": "93%", "width": "2%", "height": "2%" },
       "bonusZone1":  { "top": "59%", "left": "12%", "width": "4%", "height": "4%" },
