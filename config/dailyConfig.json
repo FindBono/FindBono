@@ -519,7 +519,7 @@
         "images/target3.png"
       ]
     },
-    "2026-02-23": {
+    "2026-07-22": {
       "mainImage":  "images/2025-07-24.jpg",
       "clickZone":  { "top": "57%", "left": "11%", "width": "4%", "height": "5%" },
       "bonusZone1":  { "top": "70%", "left": "80%", "width": "7%", "height": "7%" },
@@ -1190,7 +1190,7 @@
         "images/target3.png"
       ]
     },
-    "2026-01-17": {
+    "2026-07-21": {
       "mainImage":  "images/2025-10-28.jpg",
       "clickZone":  { "top": "22%", "left": "15%", "width": "6%", "height": "9%" },
       "bonusZone1":  { "top": "65%", "left": "87%", "width": "7%", "height": "12%" },
